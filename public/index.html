@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEO Product Title Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎯 SEO Product Title Generator</h1>
+      <p>Generate AI-powered, optimized product titles for eCommerce</p>
+    </header>
+
+    <main>
+      <form id="titleForm" class="form-container">
+        <div class="form-group">
+          <label for="product_name">Product Name *</label>
+          <input 
+            type="text" 
+            id="product_name" 
+            name="product_name" 
+            placeholder="e.g., Wireless Headphones" 
+            required
+          >
+          <small>The name or type of your product</small>
+        </div>
+
+        <div class="form-group">
+          <label for="category">Category *</label>
+          <input 
+            type="text" 
+            id="category" 
+            name="category" 
+            placeholder="e.g., Electronics, Fashion, Home & Garden" 
+            required
+          >
+          <small>Product category or niche</small>
+        </div>
+
+        <div class="form-group">
+          <label for="features">Key Features *</label>
+          <textarea 
+            id="features" 
+            name="features" 
+            placeholder="e.g., Noise cancellation, 30-hour battery, Bluetooth 5.0, Water resistant" 
+            rows="3"
+            required
+          ></textarea>
+          <small>List important features separated by commas</small>
+        </div>
+
+        <div class="form-group">
+          <label for="audience">Target Audience *</label>
+          <input 
+            type="text" 
+            id="audience" 
+            name="audience" 
+            placeholder="e.g., Music lovers, Fitness enthusiasts, Professionals" 
+            required
+          >
+          <small>Who is the primary customer for this product?</small>
+        </div>
+
+        <div class="form-group">
+          <label for="brand">Brand (Optional)</label>
+          <input 
+            type="text" 
+            id="brand" 
+            name="brand" 
+            placeholder="e.g., Sony, Apple, Samsung" 
+          >
+          <small>Your brand name if applicable</small>
+        </div>
+
+        <button type="submit" class="btn-submit" id="submitBtn">
+          Generate Titles
+        </button>
+      </form>
+
+      <!-- Results Section -->
+      <div id="resultsContainer" class="results-container hidden">
+        <h2>Generated Titles</h2>
+        <div id="titlesList" class="titles-list"></div>
+        <button type="button" class="btn-reset" onclick="resetForm()">Generate New Titles</button>
+      </div>
+
+      <!-- Loading Spinner -->
+      <div id="loadingSpinner" class="spinner hidden"></div>
+
+      <!-- Error Message -->
+      <div id="errorMessage" class="error-message hidden"></div>
+    </main>
+
+    <footer>
+      <p>💡 Tips: Use specific keywords for better SEO | Keep titles under 80 characters | Include key attributes</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

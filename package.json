@@ -1,0 +1,21 @@
+{
+  "name": "seo-product-title-generator",
+  "version": "1.0.0",
+  "description": "Generate SEO-optimized product titles using AI",
+  "main": "server/app.js",
+  "scripts": {
+    "start": "node server/app.js",
+    "dev": "nodemon server/app.js"
+  },
+  "keywords": ["seo", "ecommerce", "product", "titles", "ai"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
