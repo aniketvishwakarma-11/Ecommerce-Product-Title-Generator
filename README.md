@@ -141,8 +141,9 @@ Generate 5 SEO-optimized product titles (typically <1 second response).
   "error": "Failed to generate titles",
   "details": "error message here"
 }
----
+```
 
+---
 **Built with ❤️ for eCommerce professionals**
 
 ---
